@@ -1,16 +1,91 @@
-# React + Vite
+# 📝 AI Resume Builder  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered **Resume & Cover Letter Generator** built with the **MERN stack + Gemini API**, designed to help job seekers create professional resumes, tailored cover letters, and receive ATS (Applicant Tracking System) analysis.  
 
-Currently, two official plugins are available:
+This project combines **React, Bootstrap, jsPDF, html2canvas, and Google’s Gemini AI** to provide personalized job application materials in just a few clicks.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Generate **AI-tailored Cover Letters** (formal, informal, or casual tone)  
+✅ Improve and optimize **Resume Content** (ATS-friendly, achievement-based bullet points)  
+✅ **ATS Keyword Match Analysis** against job descriptions  
+✅ **ATS Score Estimate** (0–100) with reasoning  
+✅ Download generated results as **PDF**  
+✅ Modern **UI with Bootstrap 5 & animations**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack  
+
+- **Frontend:** React (Vite), Bootstrap 5, Animate.css  
+- **AI Model:** Gemini 2.0 Flash API  
+- **PDF Export:** jsPDF + html2canvas  
+- **Styling:** Custom CSS + gradients + Bootstrap icons  
+
+---
+
+## 📂 Project Structure  
+
+frontend/
+│── public/
+│── src/
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── components/
+│ │ └── HomePage.jsx # Main Resume Builder UI
+│ ├── App.css
+│── package.json
+│── vite.config.js
+│── README.md
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Installation & Setup  
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/ai-resume-builder.git
+   cd ai-resume-builder/frontend
+Install dependencies
+
+bash
+Copy code
+npm install
+Add your Gemini API Key
+
+Open HomePage.jsx
+
+Replace youAPIkey with your Google Gemini API key:
+
+js
+Copy code
+'X-goog-api-key': 'your_api_key_here'
+Run the development server
+
+bash
+Copy code
+npm run dev
+Open http://localhost:5173 in your browser 🚀
+
+📖 Usage
+Enter your Company Name, Experience Level, Tone, Job Description, and Resume (optional).
+
+Click "Generate AI-Powered Resume & Cover Letter".
+
+View the AI-generated:
+
+Cover Letter
+
+Optimized Resume Content
+
+Keyword Match Analysis
+
+ATS Score Estimate
+
+Download results as PDF for easy application submission.
+
